@@ -12,9 +12,17 @@
     "force-clean": "rm -rf node_modules && rm -f package-lock.json && rm -rf ios/Pods ios/Podfile.lock android/app/build ios/build && npm install && cd android && ./gradlew clean && cd ../ios && pod install && cd .."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "axios": "^1.10.0",
+    "i18next": "^25.3.2",
     "nativewind": "^2.0.11",
     "react": "19.1.0",
-    "react-native": "0.80.1"
+    "react-i18next": "^15.6.0",
+    "react-native": "0.80.1",
+    "react-native-vector-icons": "^10.2.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
