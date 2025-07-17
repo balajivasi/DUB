@@ -6,7 +6,7 @@
     "android": "npx react-native run-android",
     "ios": "npx react-native run-ios",
     "lint": "eslint .",
-    "start": "npx react-native start --reset-cache",
+    "start": "TAILWIND_MODE=watch npx react-native start --reset-cache",
     "test": "jest",
     "clean": "npm run force-clean || true",
     "force-clean": "rm -rf node_modules && rm -f package-lock.json && rm -rf ios/Pods ios/Podfile.lock android/app/build ios/build && npm install && cd android && ./gradlew clean && cd ../ios && pod install && cd .."
@@ -17,10 +17,14 @@
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.10.0",
     "i18next": "^25.3.2",
+    "lucide-react": "^0.525.0",
+    "lucide-react-native": "^0.525.0",
     "nativewind": "^2.0.11",
     "react": "19.1.0",
     "react-i18next": "^15.6.0",
     "react-native": "0.80.1",
+    "react-native-linear-gradient": "^2.8.3",
+    "react-native-svg": "^15.12.0",
     "react-native-vector-icons": "^10.2.0",
     "react-redux": "^9.2.0"
   },
