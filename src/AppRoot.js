@@ -6,6 +6,8 @@ import DubHomeScreen from './screens/home';
 import Profile from './screens/Profile';
 import StockTracker from './screens/StockTracker';
 import SuperInvestorsList from './screens/SuperInvestorsList';
+import Watchlists from './screens/Watchlists';
+import RecentFilings from './screens/RecentFilings';
 const AppRoot = () => {
     const { t } = useTranslation();
     const { email } = useSelector((state) => state.profile);
@@ -16,8 +18,10 @@ const AppRoot = () => {
         {/*<DubHomeScreen />
         <Profile />
         <StockTracker />
+        <Watchlists />
+        <RecentFilings />
         <SuperInvestorsList />*/}
-        <DubHomeScreen />
+        <Watchlists />
     </View>
 
     );
